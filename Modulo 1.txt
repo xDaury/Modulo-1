@@ -1,0 +1,13 @@
+Practica 1
+ifconfig
+date
+lns
+cd
+rm
+pwd
+reboot
+chown
+chmod
+whoami
+nmcli
+su - 
