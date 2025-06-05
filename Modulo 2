@@ -1,0 +1,39 @@
+Dionisio José Malena Mejía        2023-1504
+
+Practica 1
+sudo apt update && sudo apt upgrade -y                              Para actualizar repositorios
+grep -r ^deb /etc/apt/sources.list /etc/apt/sources.list.d/         Listar los repositorios actualmente en uso
+apt search bashtop                                                  Buscar la herramienta "bashtop"
+sudo apt install bashtop -y                                         Instalar "Bashtop
+git clone https://github.com/aristocratos/bashtop.git               Si NO está disponible, instálalo manualmente
+bashtop                                                             Verifica que la herramienta funciona
+sudo apt purge bashtop -y                                           Desinstalar la herramienta y eliminar configuración
+sudo apt autoremove --purge -y                                      Eliminar dependencias no necesarias
+
+Practica 2
+sudo crontab -e                                                     Editar el cron del root:
+0 23 * * * apt update && apt full-upgrade -y                        Agrega esta línea al final del archivo:
+0 3 * * 0 /sbin/shutdown -r now
+echo "rm -rf /tmp/*" | at now + 1 minute                            echo "rm -rf /tmp/*" | at now + 1 minute
+
+
+Practica 3
+lsblk                                                               Detectar el nuevo disco en Parrot OS
+sudo fdisk /dev/sdb                                                 Crear partición y formatearla como EXT4
+sudo mkfs.ext4 /dev/sdb1
+mkdir -p ~/Escritorio/mi_disco                                      Crear carpeta en el escritorio y montar la unidad
+sudo mount /dev/sdb1 ~/Escritorio/mi_disco
+cd ~/Escritorio/mi_disco                                            Crear el archivo AdrianAlcantara.txt
+touch AdrianAlcantara.txt
+
+
+
+
+
+  
+
+
+
+
+
+
