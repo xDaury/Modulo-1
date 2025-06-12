@@ -1,0 +1,30 @@
+Comandos utilizados en estos videos
+
+Video 1
+paso 1
+- sudo nano /etc/default/grub            
+- sudo update-grub                     Para actualizar
+- sudo reboot                          Reiniciar el dispositivo
+paso 2
+- init=/bin/bash                       codigo para acceder a la terminal
+- mount -o remount,rw/                 Para cambiar la contraseña
+- nano etc/shadow                      Para ver el usuario y la contraseña que deseas cambiar
+- passwd -user-                        Para asignar la contraseña al usuario
+- exec /sbin/init                      Para salir
+
+Video 2
+paso 1
+- nano backup.sh
+- chmod +x backup.sh                   Para asignarle los permisos
+- ./backup.sh                          Aqui nos muestra el backup creado
+paso 2
+- nano copiar_ifconfig.sh
+- chmod +x copiar_ifconfig.sh          Para asignarle los permisos
+- ./copiar_ifconfig.sh                 Para asignarle un nombre al archivo
+- cd ~/Desktop                         Para ir al escritorio en modo root
+- cat ~/Desktop/dionisio.txt           Aqui se puede ver como se copio la ip
+- ifconfig                             Para confirmar
+
+
+
+
